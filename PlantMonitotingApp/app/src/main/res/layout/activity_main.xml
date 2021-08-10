@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:outlineAmbientShadowColor="@color/black"
+    android:background="#7A87ED0E"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/MainText"
+        android:layout_width="403dp"
+        android:layout_height="89dp"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:fontFamily="@font/adamina"
+        android:gravity="center"
+        android:padding="20dp"
+        android:text="Plant Growth Monitor"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/MainView"
+        android:layout_width="389dp"
+        android:layout_height="584dp"
+        android:background="#EAB05A"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MainText" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
